@@ -1,0 +1,9 @@
+image: bwengals/bayes-workshop:latest
+ports:
+- port: 8050
+  onOpen: open-preview
+- port: 8888
+  onOpen: open-browser
+tasks:
+- init: /workspace/dash-and-jupyter-notebook-with-gitpod/run.sh
+  command: cp -r /workspace/dash-and-jupyter-notebook-with-gitpod/.jupyter /home/gitpod/
